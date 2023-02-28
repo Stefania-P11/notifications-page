@@ -17,6 +17,19 @@
    clear: both;
 }
 
+.userName, 
+.groupMention,
+header div:first-child span:first-child  {
+
+    font-weight:800;
+    color:hsl(224, 21%, 14%);
+}
+
+.groupMention {
+
+    color: hsl(217, 78%, 37%);
+}
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -25,17 +38,49 @@ body {
 
     font-family:'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
     font-weight:500;
-    font-size:16px;
+    font-size:14px;
     color: hsl(0, 0%, 67%);
+    margin:5%;
 }
+
+
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
+/******** HEADER ********/
+
+header {
+    display:flex;
+    justify-content: space-between;
+    height:50px;
+    align-items: center;
+    
 }
+
+header div:first-child span{
+
+    font-size: 18px;
+}
+
+header div > div {
+
+    background:hsl(217, 87%, 22%); 
+    width:28px;
+    padding: 1px 3px;
+    border-radius:8px;
+    text-align: center;
+    display:inline-block;
+    
+}
+
+.notificationCounter {
+    color: white !important;
+}
+
+/************ MAIN ***********/
 
 main {
 
