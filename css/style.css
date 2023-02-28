@@ -40,12 +40,6 @@ a {
     text-decoration: none;
 }
 
-.groupMention {
-
-    color: hsl(219, 72%, 40%);
-}
-
-
 
 .column-2-10 {
 
@@ -87,14 +81,20 @@ a {
 
 .privateMessage {
 
-    border:1px solid hsl(205, 33%, 90%);
+    border:1px solid hsl(211, 75%, 94%);
     border-radius:5px;
     padding:5%;
 }
 
-.postMention {
+.privateMessage:hover {
 
-    color:rgb(137,140,147);
+    background:hsl(211, 68%, 94%);
+}
+
+.postMention,
+.groupMention {
+
+    color:rgb(120, 123, 129);
     font-weight: 800;
 
 }
@@ -115,6 +115,21 @@ a {
     margin-left:5%;
 
 }
+
+.groupMention:hover,
+.userName:hover,
+.postMention:hover,
+.markRead:hover {
+
+    color: hsl(219, 72%, 40%);
+} 
+
+.message,
+.markRead {
+    color: hsl(0, 1%, 54%);
+} 
+
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -126,6 +141,7 @@ body {
     font-size:14px;
     color: hsl(0, 1%, 54%);
     margin:2% 5%;
+    padding:2%;
 }
 
 
