@@ -24,6 +24,10 @@ h1 {
 
 }
 
+span {
+    margin-left:1%;
+}
+
 .userName, 
 .groupMention,
 h1  {
@@ -34,8 +38,10 @@ h1  {
 
 .groupMention {
 
-    color: rgb(65,79,127);
+    color: hsl(219, 72%, 40%);
 }
+
+
 
 .column-2-10 {
 
