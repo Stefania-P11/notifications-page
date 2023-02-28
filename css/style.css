@@ -17,9 +17,16 @@
    clear: both;
 }
 
+
+h1 {
+    font-size:19px;
+    display:inline;
+
+}
+
 .userName, 
 .groupMention,
-header div:first-child span:first-child  {
+h1  {
 
     font-weight:800;
     color:hsl(224, 21%, 14%);
@@ -40,10 +47,8 @@ body {
     font-weight:500;
     font-size:14px;
     color: hsl(0, 0%, 67%);
-    margin:5%;
+    margin:2% 5%;
 }
-
-
 
 
 /******************************************
@@ -53,31 +58,31 @@ body {
 /******** HEADER ********/
 
 header {
+
     display:flex;
     justify-content: space-between;
-    height:50px;
-    align-items: center;
+    height:100px;
+    align-items:center;
     
 }
 
-header div:first-child span{
 
-    font-size: 18px;
-}
-
-header div > div {
+header .container {
 
     background:hsl(217, 87%, 22%); 
-    width:28px;
-    padding: 1px 3px;
+    width:30px;
+    padding: 2px 3px;
     border-radius:8px;
     text-align: center;
     display:inline-block;
+
     
 }
 
 .notificationCounter {
+
     color: white !important;
+
 }
 
 /************ MAIN ***********/
