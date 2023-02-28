@@ -58,14 +58,21 @@ h1  {
 }
 
 .imageComment {
+    
     display:flex;
     justify-content: space-between;
     align-items: flex-start;
+    
 }
 
-.imageMention {
-    width:100%;
-    text-align:justify;
+.imageComment div:first-child  {
+    width:60%;
+}
+
+.imageMention div + div{
+
+    width:20%;
+    
    
 } 
 
@@ -80,6 +87,23 @@ h1  {
 
     color:rgb(137,140,147);
     font-weight: 800;
+
+}
+
+.notificationCounter {
+
+    color: white !important;
+
+}
+
+.badge {
+
+    height:8px;
+    background-color: hsl(1, 90%, 64%);
+    width:8px;
+    border-radius: 50%;
+    display:inline-block;
+    margin-left:5%;
 
 }
 /******************************************
@@ -124,17 +148,10 @@ header .container {
     
 }
 
-.notificationCounter {
 
-    color: white !important;
-
-}
 
 /************ MAIN ***********/
 
-main {
-
-}
 
 main > div {
 
@@ -148,6 +165,7 @@ main > div {
 }
 
 
+/************ FOOTER *************/
 
 footer {
 
