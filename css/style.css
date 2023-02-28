@@ -17,6 +17,26 @@
    clear: both;
 }
 
+
+h1 {
+    font-size:19px;
+    display:inline;
+
+}
+
+.userName, 
+.groupMention,
+h1  {
+
+    font-weight:800;
+    color:hsl(224, 21%, 14%);
+}
+
+.groupMention {
+
+    color: hsl(217, 78%, 37%);
+}
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -25,17 +45,47 @@ body {
 
     font-family:'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
     font-weight:500;
-    font-size:16px;
+    font-size:14px;
     color: hsl(0, 0%, 67%);
+    margin:2% 5%;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+/******** HEADER ********/
+
 header {
 
+    display:flex;
+    justify-content: space-between;
+    height:100px;
+    align-items:center;
+    
 }
+
+
+header .container {
+
+    background:hsl(217, 87%, 22%); 
+    width:30px;
+    padding: 2px 3px;
+    border-radius:8px;
+    text-align: center;
+    display:inline-block;
+
+    
+}
+
+.notificationCounter {
+
+    color: white !important;
+
+}
+
+/************ MAIN ***********/
 
 main {
 
