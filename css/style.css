@@ -79,12 +79,11 @@ a {
     width:60%;
 }
 
-.imageMention div + div{
+.imageMention {
 
-    width:20%;
-    
-   
-} 
+    width:70%;
+}
+
 
 .privateMessage {
 
