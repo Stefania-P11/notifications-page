@@ -38,4 +38,6 @@ markAll.addEventListener('click', () => {
           const badge = notification.querySelector('.badge')
           badge.style.display = 'none'
      })
+
+     document.querySelector('.notificationCounter').innerText = 0
 })
