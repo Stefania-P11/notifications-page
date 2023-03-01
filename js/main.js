@@ -3,6 +3,7 @@
 // Displays the initial number of unread notifications
 const notifications = document.querySelectorAll('.unread')
 
+
 let initialNotificationCount = 0
 notifications.forEach (notification => {
      
@@ -15,6 +16,7 @@ notifications.forEach (notification => {
 
 // Changes the style of an unread notification when clicked
 // Updates the notification Counter
+
 notifications.forEach(notification => {
      notification.addEventListener('click', (e) => {
           
@@ -22,10 +24,12 @@ notifications.forEach(notification => {
           const badge = notification.querySelector('.badge')
           badge.style.display = 'none'
           let notificationCount = document.querySelector('.notificationCounter').innerText
-          if (e.target.classList.contains('unread')) {
+          if (e.target.classList.contains('triggerCount')) {
 
                notificationCount--;
+               //notification.classList.remove('triggerCount')
                notification.classList.remove('unread')
+             
           }
 
           document.querySelector('.notificationCounter').innerText = notificationCount;
