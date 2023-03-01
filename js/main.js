@@ -1,24 +1,22 @@
 
-let unreadMessages = document.querySelectorAll('.unread');
+let unreadMessages = document.querySelectorAll('.unread'); 
 
-unreadMessages.forEach(message => {
-  message.addEventListener('click', switchStyle) 
+unreadMessages.forEach(message => { 
 
-   
-    function switchStyle(event) {
+     message.addEventListener('click', (event) => { 
         
-        let parentDiv = event.target.closest('.unread');
-   
-         if (parentDiv){
-             parentDiv.classList.replace('unread', 'read');
-         }
-    }
-})
+           let parentDiv = event.target.closest('.unread'); 
+
+           if (parentDiv) {     
+            
+                parentDiv.style.backgroundColor = 'white'; 
+                
+           }
+       });
+ }); 
+
+
+//  document.getElementsByClassName('badge').style.display = 'none'  TRY THIS AGAIN TOMORROW
 
 
 
-// document.querySelector('.markRead').addEventListener('click', switchAll)
-
-// function switchAll() {
-//     document.querySelectorAll('.unread').classList.replace('unread', 'read');
-// }
