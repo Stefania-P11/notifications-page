@@ -8,6 +8,7 @@ let initialNotificationCount = 0
 notifications.forEach (notification => {
      
      initialNotificationCount ++
+   
 })
 
      document.querySelector('.notificationCounter').innerText = initialNotificationCount
@@ -24,10 +25,9 @@ notifications.forEach(notification => {
           const badge = notification.querySelector('.badge')
           badge.style.display = 'none'
           let notificationCount = document.querySelector('.notificationCounter').innerText
-          if (e.target.classList.contains('triggerCount')) {
+          if (e.target.classList.contains('unread')) {
 
                notificationCount--;
-               //notification.classList.remove('triggerCount')
                notification.classList.remove('unread')
              
           }
@@ -51,6 +51,7 @@ markAll.addEventListener('click', () => {
           notification.style.background = '#fff'
           const badge = notification.querySelector('.badge')
           badge.style.display = 'none'
+          notification.classList.remove('unread')
      })
 
      document.querySelector('.notificationCounter').innerText = 0
