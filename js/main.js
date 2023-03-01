@@ -25,6 +25,7 @@ notifications.forEach(notification => {
           if (e.target.classList.contains('unread')) {
 
                notificationCount--;
+               notification.classList.remove('unread')
           }
 
           document.querySelector('.notificationCounter').innerText = notificationCount;

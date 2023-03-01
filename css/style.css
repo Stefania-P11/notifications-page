@@ -129,7 +129,10 @@ a {
     color: hsl(0, 1%, 54%);
 } 
 
+.read {
 
+    background:'#fff' !important;
+}
 
 /******************************************
 /* BASE STYLES
