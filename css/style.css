@@ -52,58 +52,6 @@ a {
 
 }
 
-.timeline {
-    display:block;
-    color:hsl(0, 0%, 72%);
-}
-
-.profilePic {
-    width:50px;
-}
-
-.imageComment {
-    
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    
-}
-
-.imageComment div:first-child  {
-    width:60%;
-}
-
-.imageMention {
-
-    width:70%;
-}
-
-
-.privateMessage {
-
-    border:1px solid hsl(211, 75%, 94%);
-    border-radius:5px;
-    padding:5%;
-}
-
-.privateMessage:hover {
-
-    background:hsl(211, 68%, 94%);
-}
-
-.postMention,
-.groupMention {
-
-    color:rgb(120, 123, 129);
-    font-weight: 800;
-
-}
-
-.notificationCounter {
-
-    color: white !important;
-
-}
 
 .badge {
 
@@ -119,7 +67,7 @@ a {
 .groupMention:hover,
 .userName:hover,
 .postMention:hover,
-.markRead:hover {
+.markRead:hover { 
 
     color: hsl(219, 72%, 40%);
 } 
@@ -130,9 +78,6 @@ a {
     font-size:.86rem;
 } 
 
-header > div + div {
-    width:20%;
-}
 
 .read {
 
@@ -174,7 +119,6 @@ header {
 
 
 
-
 header .container {
 
     background:rgb(30,57,130); 
@@ -187,7 +131,18 @@ header .container {
     
 }
 
+header > div + div {
 
+    width:30%;
+    padding-left:10%;
+
+}
+
+.notificationCounter {
+
+    color: white !important;
+
+}
 
 /************ MAIN ***********/
 
@@ -203,7 +158,53 @@ main > div {
     line-height:2em;
 }
 
+.timeline {
+    display:block;
+    color:hsl(0, 0%, 72%);
+}
 
+.profilePic {
+    width:50px;
+}
+
+.imageComment {
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.imageComment div:first-child  {
+    width:60%;
+}
+
+.imageMention {
+
+    width:70%;
+}
+
+
+.privateMessage {
+
+    border:1px solid hsl(211, 75%, 94%);
+    border-radius:5px;
+    padding:5%;
+}
+
+.privateMessage:hover {
+
+    background:hsl(211, 68%, 94%);
+}
+
+
+.postMention,
+.groupMention {
+
+    color:rgb(120, 123, 129);
+    font-weight: 800;
+
+}
 /************ FOOTER *************/
 
 footer {
@@ -221,7 +222,7 @@ footer {
 @media (min-width:700px) {
     body {
 
-        margin:5% 15%;
+        margin:5% 10%;
         background:hsl(210, 60%, 98%);
 
     }
@@ -229,7 +230,7 @@ footer {
     main, 
     header {
         background: white;
-        padding:3% 10%;
+        padding:3% 5%;
     }
 
     footer {
