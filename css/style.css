@@ -19,7 +19,7 @@
 
 
 h1 {
-    font-size:19px;
+    font-size:1.36rem;
     display:inline;
 
 }
@@ -127,13 +127,11 @@ a {
 .message,
 .markRead {
     color: hsl(0, 1%, 54%);
-    font-size:12px;
+    font-size:.86rem;
 } 
 
-.markRead {
-
-    display:inline-block;
-    width:100%;
+header > div + div {
+    width:20%;
 }
 
 .read {
@@ -151,7 +149,7 @@ body {
 
     font-family:'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
     font-weight:500; 
-    font-size:14px;
+    font-size:91.2%;
     color: hsl(0, 1%, 54%);
     margin:2% 3%;
     padding:2%;
@@ -171,7 +169,7 @@ header {
     justify-content: space-between;
     height:100px;
     align-items:center;
-    
+ 
 }
 
 
