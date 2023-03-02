@@ -217,3 +217,23 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media (min-width:850px) {
+    body {
+
+        margin:5% 15%;
+        background:hsl(210, 60%, 98%);
+
+    }
+
+    main, 
+    header {
+        background: white;
+        padding:3% 10%;
+    }
+
+    footer {
+        
+        margin-top:10%;
+    }
+}
