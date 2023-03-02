@@ -24,16 +24,16 @@ notifications.forEach(notification => {
           notification.style.background = '#fff'
           const badge = notification.querySelector('.badge')
           badge.style.display = 'none'
-          let notificationCount = document.querySelector('.notificationCounter').innerText
-          if (e.target.classList.contains('unread')) {
-
+         
+          if (notification.classList.contains('unread')){
+               let notificationCount = document.querySelector('.notificationCounter').innerText
                notificationCount--;
+               e.target.classList.remove('triggerCount')
                notification.classList.remove('unread')
-             
-          }
-
+         
           document.querySelector('.notificationCounter').innerText = notificationCount;
-     })
+     }
+})
 
 })
 
