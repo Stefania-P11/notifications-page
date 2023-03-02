@@ -218,7 +218,7 @@ footer {
 /* ADDITIONAL STYLES
 /*******************************************/
 
-@media (min-width:850px) {
+@media (min-width:700px) {
     body {
 
         margin:5% 15%;
