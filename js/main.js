@@ -16,7 +16,7 @@ notifications.forEach (notification => {
 
 
 // Changes the style of an unread notification when clicked
-// Updates the notification Counter
+// Updates the Notification Counter
 
 notifications.forEach(notification => {
      notification.addEventListener('click', (e) => {
